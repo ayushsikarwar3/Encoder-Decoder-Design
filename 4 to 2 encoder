@@ -1,3 +1,11 @@
+
+// ============================================================================
+// COMPANY NAME: CODTECH IT SOLUTIONS 
+// INTERN NAME:  AYUSH SIKARWAR
+// INTERN ID:    CITS5568  
+// DOMAIN:       VLSI
+// TASK TITLE:  Design and Simulation of 4-Bit Encoder and Decoder Using Verilog HDL
+// ============================================================================
 module encoder_4to2(
     input [3:0] d,
     output reg [1:0] y
