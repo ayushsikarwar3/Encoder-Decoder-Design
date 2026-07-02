@@ -1,5 +1,10 @@
-
-module decoder_2to4(
+// ============================================================================
+// COMPANY NAME: CODTECH IT SOLUTIONS 
+// INTERN NAME:  AYUSH SIKARWAR
+// INTERN ID:    CITS5568  
+// DOMAIN:       VLSI
+// TASK TITLE:  Design and Simulation of 4-Bit Encoder and Decoder Using Verilog HDL
+// ============================================================================module decoder_2to4(
     input [1:0] a,
     output reg [3:0] y
 );
