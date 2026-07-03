@@ -7,8 +7,8 @@ An Encoder is a combinational logic circuit which receives multiple input lines 
 Both circuits are essential circuits in Digital Electronics, VLSI Design, FPGA Development, Embedded Systems and Computer Architecture.
 
 # Objective
--1 Using Verilog HDL, design a 4-to-2 Encoder.
--2 Create a 2 to 4 Decoder in Verilog HDL.
--3 Simulate both circuits using Vivado/ModelSim.
--4 Test for functionality with a test bench.
--5 Know how to implement combinational logic in hardware description languages.
+- Using Verilog HDL, design a 4-to-2 Encoder.
+- Create a 2 to 4 Decoder in Verilog HDL.
+- Simulate both circuits using Vivado/ModelSim.
+- Test for functionality with a test bench.
+-Know how to implement combinational logic in hardware description languages.
