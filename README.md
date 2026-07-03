@@ -151,3 +151,16 @@ endmodule
 | 01 | 0010 |
 | 10 | 0100 |
 | 11 | 1000 |
+
+# simulation image
+
+<img width="1718" height="916" alt="screenshot png" src="https://github.com/user-attachments/assets/c93d4c1e-612e-4de1-a5bd-a57763ff8a9d" />
+
+# Author
+
+- Ayush Sikarwar|btech electronics and communication
+- linkedin-https://www.linkedin.com/in/ayush-sikarwar-a89878413?utm_source=share_via&utm_content=profile&utm_medium=member_android
+
+# License
+
+This project is licensed under the MIT License.
