@@ -49,3 +49,84 @@ A **decoder** is a combinational logic circuit that converts **binary input data
 | 1 | 0 | 0 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
 
+# Verilog Code
+### 4-to-2 Encoder
+```verilog
+module encoder_4to2(
+    input [3:0] d,
+    output reg [1:0] y
+);
+
+always @(*) begin
+    case(d)
+        4'b0001: y = 2'b00;
+        4'b0010: y = 2'b01;
+        4'b0100: y = 2'b10;
+        4'b1000: y = 2'b11;
+        default: y = 2'b00;
+    endcase
+end
+
+endmodule
+```
+---
+### 2-to-4 Decoder
+```verilog
+module decoder_2to4(
+    input [1:0] a,
+    output reg [3:0] y
+);
+
+always @(*) begin
+    case(a)
+        2'b00: y = 4'b0001;
+        2'b01: y = 4'b0010;
+        2'b10: y = 4'b0100;
+        2'b11: y = 4'b1000;
+    endcase
+end
+
+endmodule
+```
+---
+# Testbench
+```verilog
+module tb_encoder_decoder;
+
+reg [3:0] d;
+wire [1:0] y_enc;
+
+reg [1:0] a;
+wire [3:0] y_dec;
+
+encoder_4to2 ENC(
+    .d(d),
+    .y(y_enc)
+);
+
+decoder_2to4 DEC(
+    .a(a),
+    .y(y_dec)
+);
+
+initial begin
+
+// Encoder Testing
+d = 4'b0001; #10;
+d = 4'b0010; #10;
+d = 4'b0100; #10;
+d = 4'b1000; #10;
+
+// Decoder Testing
+a = 2'b00; #10;
+a = 2'b01; #10;
+a = 2'b10; #10;
+a = 2'b11; #10;
+
+$finish;
+
+end
+
+endmodule
+```
+---
